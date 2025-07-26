@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="form-login.css">
+</head>
+<body>
+  <div id="img_topo">
+    <img src="imagens/img_login_topo.png" alt="">
+  </div>
+  <div id="link_voltar">
+    <a href="index.html">< Voltar</a>
+  </div>
+  <div id="titulo_login">Login</div>
+  <form action="login.php" method="POST">
+    <div id="ajustar_input">
+      <p><input name="email" placeholder="E-mail" type="text" required></p>
+      <p><input name="senha" type="password" placeholder="Senha" required></p>
+    </div>
+    <p id="esqueceu_senha">
+      <a href="esqueceuasenha.php" target="_blank">Esqueceu sua senha?</a>
+      <a id="criar_conta" href="" target="_blank">Criar conta</a>
+    </p>
+    <div id="img_parte_de_baixo">
+      <img src="imagens/img_login_baixo.png" alt="">
+    </div>
+    <p id="condicoes">Ao fazer login, você aceita nossos Termos e Condições e nossa Política de Privacidade.</p>
+    <p id="btn_login"><input value="Login" type="submit"></p>
+  </form>
+</body>
+</html>

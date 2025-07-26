@@ -1,0 +1,103 @@
+:root {
+  --color-background: #fffdf7;
+  --color-black: #212121;
+  --color-black-heavy: #000000;
+  --color-text: #4f4f4f;
+  --color-text-out: #90908e;
+  --color-primary: #f29e38;
+  --color-secondary: #f9c375;
+  --color-white: #ffffff;
+  --color-red: #e74c3c;
+  --color-green: #2ecc71;
+  --color-separate: #cccccc;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+body {
+  position: relative;
+}
+* {
+  margin: 0;
+  padding: 0;
+  background: var(--color-background);
+}
+#img_topo img {
+  width: 400px;
+  float: right;
+}
+#img_topo {
+  margin-top: 100px;
+  right: 0;
+  z-index: 1;
+}
+#titulo_login {
+  color: var(--color-primary);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: var(--font-family-monospace);
+  margin-left: 15px;
+  margin-top: -100px;
+}
+#link_voltar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+#link_voltar {
+  margin-top: 30px;
+  margin-left: 15px;
+  position: absolute;
+  z-index: 10;
+}
+#ajustar_input {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 80px;
+}
+input {
+  width: 350px;
+  height: 50px;
+  margin-top: 15px;
+  padding-left: 10px;
+  border-radius: 15px;
+  border: none;
+  background: #dddddd;
+}
+input::placeholder {
+  color: var(--color-text);
+  font-size: 15px;
+}
+#esqueceu_senha a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+#esqueceu_senha {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+#img_parte_de_baixo img {
+  width: 400px;
+}
+#criar_conta {
+  float: right;
+  margin-right: 20px;
+}
+#condicoes {
+  color: var(--color-primary);
+  margin-top: -100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+}
+#btn_login {
+  text-align: center;
+}
+#btn_login input {
+  background: var(--color-primary);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
