@@ -1,103 +1,117 @@
 :root {
-  --color-background: #fffdf7;
-  --color-black: #212121;
-  --color-black-heavy: #000000;
-  --color-text: #4f4f4f;
-  --color-text-out: #90908e;
-  --color-primary: #f29e38;
-  --color-secondary: #f9c375;
-  --color-white: #ffffff;
-  --color-red: #e74c3c;
-  --color-green: #2ecc71;
-  --color-separate: #cccccc;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-primary: #f7941d;
+  --background: #fffaf1;
+  --font-family-monospace: 'Segoe UI', sans-serif;
 }
-body {
-  position: relative;
-}
+
+/* Reset básico */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: var(--color-background);
+}
+
+body {
+  font-family: var(--font-family-monospace);
+  background-color: var(--background);
+  padding: 5vw;
+  position: relative;
+}
+
+/* imagem do topo */
+#img_topo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  z-index: -1;
 }
 #img_topo img {
-  width: 400px;
-  float: right;
+  width: 100%;
+  height: auto;
 }
-#img_topo {
-  margin-top: 100px;
-  right: 0;
-  z-index: 1;
-}
-#titulo_login {
-  color: var(--color-primary);
-  font-size: 30px;
-  font-weight: bold;
-  font-family: var(--font-family-monospace);
-  margin-left: 15px;
-  margin-top: -100px;
+
+/* link voltar */
+#link_voltar {
+  position: absolute;
+  top: 3vh;
+  left: 5vw;
+  z-index: 10;
 }
 #link_voltar a {
   text-decoration: none;
   color: black;
   font-weight: 600;
+  font-size: 1em;
 }
-#link_voltar {
-  margin-top: 30px;
-  margin-left: 15px;
-  position: absolute;
-  z-index: 10;
+
+/* título */
+#titulo_login {
+  color: var(--color-primary);
+  font-size: 7vw;
+  font-weight: bold;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+  margin-left: 1vw;
 }
-#ajustar_input {
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 80px;
-}
-input {
-  width: 350px;
-  height: 50px;
-  margin-top: 15px;
-  padding-left: 10px;
+
+/* inputs */
+#ajustar_input input {
+  width: 100%;
+  padding: 1.2em;
   border-radius: 15px;
   border: none;
-  background: #dddddd;
+  margin-bottom: 1em;
+  background-color: #ddd;
+  font-size: 1em;
 }
-input::placeholder {
-  color: var(--color-text);
-  font-size: 15px;
+
+/* esqueceu senha + criar conta */
+#esqueceu_senha {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95em;
+  margin-bottom: 2em;
+  padding: 0 0.5vw;
 }
 #esqueceu_senha a {
-  text-decoration: none;
   color: var(--color-primary);
-}
-#esqueceu_senha {
-  margin-top: 10px;
-  font-size: 15px;
+  text-decoration: none;
   font-weight: 600;
-  margin-left: 20px;
+}
+
+/* imagem parte de baixo */
+#img_parte_de_baixo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: -1;
 }
 #img_parte_de_baixo img {
-  width: 400px;
+  width: 100%;
+  height: auto;
 }
-#criar_conta {
-  float: right;
-  margin-right: 20px;
-}
+
+/* texto de condições */
 #condicoes {
+  font-size: 0.95em;
   color: var(--color-primary);
-  margin-top: -100px;
-  margin-left: 40px;
-  margin-right: 40px;
   text-align: center;
+  margin: 3vh 0 2vh 0;
+  padding: 0 10px;
+  margin-top: 150px;
 }
-#btn_login {
-  text-align: center;
-}
+
+/* botão login */
 #btn_login input {
-  background: var(--color-primary);
+  width: 100%;
+  padding: 1em;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 15px;
   color: white;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 1.1em;
+  cursor: pointer;
 }
