@@ -4,33 +4,25 @@
   --font-family-monospace: 'Segoe UI', sans-serif;
 }
 
-/* Reset básico */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-body {
+html, body {
+  width: 100%;
+  height: 100%;
   font-family: var(--font-family-monospace);
   background-color: var(--background);
+}
+
+#container {
   padding: 5vw;
   position: relative;
+  max-width: 480px;
+  margin: 0 auto;
 }
-
-/* imagem do topo */
-#img_topo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60vw;
-  z-index: -1;
-}
-#img_topo img {
-  width: 100%;
-  height: auto;
-}
-
 /* link voltar */
 #link_voltar {
   position: absolute;
@@ -48,10 +40,10 @@ body {
 /* título */
 #titulo_login {
   color: var(--color-primary);
-  font-size: 7vw;
+  font-size: 8vw;
   font-weight: bold;
   margin-top: 20vh;
-  margin-bottom: 5vh;
+  margin-bottom: 6vh;
   margin-left: 1vw;
 }
 
@@ -72,25 +64,11 @@ body {
   justify-content: space-between;
   font-size: 0.95em;
   margin-bottom: 2em;
-  padding: 0 0.5vw;
 }
 #esqueceu_senha a {
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 600;
-}
-
-/* imagem parte de baixo */
-#img_parte_de_baixo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100vw;
-  z-index: -1;
-}
-#img_parte_de_baixo img {
-  width: 100%;
-  height: auto;
 }
 
 /* texto de condições */
@@ -100,7 +78,7 @@ body {
   text-align: center;
   margin: 3vh 0 2vh 0;
   padding: 0 10px;
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 /* botão login */
